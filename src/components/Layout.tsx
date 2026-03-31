@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import {
   LayoutDashboard, Monitor, Package, RefreshCw,
-  Thermometer, BarChart3, Bell, Settings
+  Thermometer, BarChart3, Bell, Settings, WarehouseIcon
 } from "lucide-react";
 import techBg from "@/assets/tech-bg.jpg";
 
