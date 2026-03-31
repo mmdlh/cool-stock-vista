@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import {
   LayoutDashboard, Monitor, Package, RefreshCw,
-  Thermometer, BarChart3, Bell, Settings
+  Thermometer, BarChart3, Bell, Settings, WarehouseIcon
 } from "lucide-react";
 import techBg from "@/assets/tech-bg.jpg";
 
@@ -47,9 +47,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex items-center gap-1">
             {leftMenus.map((m) => <NavItem key={m.path} {...m} />)}
           </div>
-          <h1 className="font-display text-2xl font-bold tracking-[0.2em] text-foreground glow-text select-none">
-            智能货架管理平台
-          </h1>
+          <div className="flex items-center gap-3 select-none">
+            <WarehouseIcon className="w-7 h-7 text-primary drop-shadow-[0_0_8px_hsl(var(--primary)/0.6)]" />
+            <h1 className="font-display text-2xl font-bold tracking-[0.25em] bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent drop-shadow-[0_0_12px_hsl(var(--primary)/0.4)]">
+              智能货架管理平台
+            </h1>
+          </div>
           <div className="flex items-center gap-1">
             {rightMenus.map((m) => <NavItem key={m.path} {...m} />)}
           </div>
