@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["Orbitron", "monospace"],
+        body: ["Rajdhani", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +51,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "cyber-blue": "hsl(var(--cyber-blue))",
+        "cyber-light": "hsl(var(--cyber-light))",
+        "cyber-glow": "hsl(var(--cyber-glow))",
+        "cyber-green": "hsl(var(--cyber-green))",
+        "cyber-orange": "hsl(var(--cyber-orange))",
+        "cyber-purple": "hsl(var(--cyber-purple))",
+        "cyber-pink": "hsl(var(--cyber-pink))",
+        "cyber-red": "hsl(var(--cyber-red))",
+        "glass-border": "hsl(var(--glass-border))",
+        "glass-hover": "hsl(var(--glass-hover))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,20 +79,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
