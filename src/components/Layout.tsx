@@ -47,7 +47,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex items-center gap-1">
             {leftMenus.map((m) => <NavItem key={m.path} {...m} />)}
           </div>
-          <h1 className="font-display text-lg font-bold tracking-widest text-foreground glow-text select-none">
+          <h1 className="font-display text-2xl font-bold tracking-[0.2em] text-foreground glow-text select-none">
             智能货架管理平台
           </h1>
           <div className="flex items-center gap-1">
